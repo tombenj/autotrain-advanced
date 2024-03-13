@@ -11,7 +11,7 @@ tags:
 - autotrain
 - text2text-generation
 widget:
-- text: "I love AutoTrain"
+- text: "seq2seq"
 datasets:
 - {dataset}
 ---

@@ -31,7 +31,7 @@ tags:
 - autotrain
 - text-generation
 widget:
-- text: "I love AutoTrain because "
+- text: "new "
 license: other
 ---
 
