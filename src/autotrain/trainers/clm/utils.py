@@ -60,7 +60,7 @@ messages = [
 ]
 
 input_ids = tokenizer.apply_chat_template(conversation=messages, tokenize=True, add_generation_prompt=True, return_tensors='pt')
-output_ids = model.generate(input_ids.to('cuda'))
+output_ids = model.generate(input_ids.to('cuda'), max_new_tokens=1024)
 response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
 
 # Model response: "Hello! How can I assist you today?"
