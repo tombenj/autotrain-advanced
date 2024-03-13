@@ -18,7 +18,7 @@ datasets:
 
 # Model Trained Using AutoTrain
 
-- Problem type: Seq2Seq
+- Problem type: Seq2Seq2
 
 ## Validation Metrics
 {validation_metrics}

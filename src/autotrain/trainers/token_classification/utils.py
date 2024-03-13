@@ -10,7 +10,7 @@ tags:
 - autotrain
 - token-classification
 widget:
-- text: "I love AutoTrain"
+- text: "I love AutoTrain2"
 datasets:
 - {dataset}
 ---
