@@ -163,6 +163,21 @@ class RunAutoTrainSeq2SeqCommand(BaseAutoTrainCommand):
                 "type": str,
                 "default": "",
             },
+            {
+                "arg": "--model_max_length",
+                "help": "Model max length to use",
+                "required": False,
+                "type": int,
+                "default": 1024,
+                "alias": ["--max-len", "--max-length"],
+            },
+            {
+                "arg": "--max_new_tokens",
+                "help": "Model max new tokens to use",
+                "required": False,
+                "type": int,
+                "default": 1024,
+            },
         ]
         arg_list.extend(common_args())
         run_seq2seq_parser = parser.add_parser("seq2seq", description="✨ Run AutoTrain Seq2Seq")
