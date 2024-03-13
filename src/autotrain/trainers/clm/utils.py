@@ -179,7 +179,7 @@ def _tokenize(prompt, tokenizer, config):
     result = tokenizer(
         prompt,
         truncation=True,
-        max_length=tokenizer.model_max_length,
+        max_new_tokens=tokenizer.model_max_length,
         padding=False,
         return_tensors=None,
     )
